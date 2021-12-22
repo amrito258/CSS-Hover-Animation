@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    text-align: center;
+    margin-top: 50px;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+.container{
+    height: 100%;
+    perspective: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.buuton{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+.icon{
+    z-index: 5;
+    color: black;
+}
+.fill{
+    width: 120%;
+    height: 120%;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    transition: all 0.4s ease;
+}
+.buuton:hover .fill{
+    transform: translate(45px, -45px);
+}
+.buuton:hover .icon{
+    color: white;
+}
